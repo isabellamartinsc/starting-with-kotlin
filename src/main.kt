@@ -1,7 +1,21 @@
 fun main() {
 //    calculaSaldo(saldo = 300.0)
 //    testDownTo()
-    testFor()
+//    testFor()
+
+    //Loop infinito. Para se incrementarmos a variavel com ++
+    var i = 0;
+    while(i < 5){
+        val titular: String = "Alex $i";
+        val numeroConta: Int = 1000 + i;
+        var saldo = i + 10.0;
+
+        println("titular $titular");
+        println("número da conta $numeroConta");
+        println("saldo da conta $saldo");
+        println();
+        i++;
+    }
 }
 
 
