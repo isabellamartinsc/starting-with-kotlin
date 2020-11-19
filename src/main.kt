@@ -1,10 +1,29 @@
 fun main() {
+
+    val contaIsabella = Conta()
+    contaIsabella.titular = "Isabella Cruz"
+    contaIsabella.numeroConta = 12345
+    contaIsabella.saldo = 0.00
+
+    println("Depositando na conta da Isabella, valor de: ")
+    deposita(contaIsabella, valor = 300.0)
+    println(contaIsabella.saldo)
+}
+
+
+
+fun deposita(conta: Conta, valor: Double){
+    //Modifica o saldo da conta, somando com o valor recebido
+    conta.saldo += valor
+
+}
+fun testingClasses(){
     //Instanciando a classe de Conta
     Conta()
 
     //Instanciando a classe de conta, atribuindo a uma variavel
 
-    val contaIsabella: Conta = Conta()
+    val contaIsabella = Conta()
     contaIsabella.titular = "Isabella Cruz"
     contaIsabella.numeroConta = 12345
     contaIsabella.saldo = 0.00
@@ -19,7 +38,6 @@ fun main() {
 
 
 }
-
 //Criada classe de Conta
 class Conta {
     var titular = ""
